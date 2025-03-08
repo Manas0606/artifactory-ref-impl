@@ -93,6 +93,9 @@ ENV i18n_zip_path=${base_path}/libs-release-local/i18n
 # environment variable for theme zip path
 ENV theme_zip_path=${base_path}/libs-release-local/theme
 
+# environment variable for image zip path
+ENV image_zip_path=${base_path}/libs-release-local/image
+
 # environment variable for idp auth wrapper zip path
 ENV idp_auth_wrapper_lib_zip_path=${base_path}/libs-release-local/idp/idp-auth-wrapper
 
@@ -163,6 +166,14 @@ COPY /src/i18n/mock-relying-party-i18n-bundle/*  ${work_dir}/mock-relying-party-
 COPY /src/i18n/esignet-i18n-bundle/*  ${work_dir}/esignet-i18n-bundle/
 
 COPY /src/theme/esignet-theme/* ${work_dir}/esignet-theme/
+
+COPY /src/image/esignet-image/* ${work_dir}/esignet-image/
+
+COPY /src/image/esignet-signup-image/* ${work_dir}/esignet-signup-image/
+
+COPY /src/i18n/esignet-signup-i18n-bundle/*  ${work_dir}/esignet-signup-i18n-bundle/
+
+COPY /src/theme/esignet-signup-theme/* ${work_dir}/esignet-signup-theme/
 
 COPY /src/jre/zulu11.41.23-ca-fx-jre11.0.8-win_x64.zip ${regclient_jar_path}/zulu11.41.23-ca-fx-jre11.0.8-win_x64.zip
 
