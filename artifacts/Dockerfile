@@ -115,6 +115,7 @@ ENV idp_auth_wrapper_version=0.0.1-SNAPSHOT
 RUN mkdir -p ${biosdk_client_zip_path}/biosdk-client ${demosdk_zip_path}/demosdk ${biosdk_lib_zip_path}/biosdk-lib ${cache_path} ${ida_sh_path} ${hsm_client_path} ${mosip_plugins_zip_path} ${kernel_jar_path} ${test_jar_path} ${idobject_jar_path} ${regproc_jar_path} ${sdk_path} ${icu4j_jar_path} ${clamav_path} ${i18n_zip_path} ${child_auth_filter_jar_path} ${base_path}/libs-release-local/reg-client ${scripts_path} ${master_template_path} ${jpeg_sdk_path} ${jpegsdk_lib_zip_path}/jpeg-sdk-lib/ ${idp_auth_wrapper_lib_zip_path} ${esignet_wrapper_lib_zip_path}/esignet-wrapper
 
 # Copy all the respective jars to the location
+COPY /src/auth/kernel-auth-adapter-new/kernel-auth-adapter-1.2.0.1.jar ${kernel_jar_path}/kernel-auth-adapter.jar
 
 COPY /src/sdk/biosdk/install.sh ${biosdk_client_zip_path}/biosdk-client/
 
