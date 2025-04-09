@@ -72,7 +72,10 @@
     "birth_date": "Fecha de nacimiento",
     "address": "Dirección",
     "show_raw_user_info": "Mostrar información cruda del usuario",
-    "hide_raw_user_info": "Ocultar información cruda del usuario"
+    "hide_raw_user_info": "Ocultar información cruda del usuario",
+    "deceasedDeclarationDate": "Fecha de declaración de fallecimiento",
+    "declaredAsDeceased": "Declarado como fallecido",
+    "typeOfDeath": "Tipo de muerte"
   },
   "sidenav": {
     "health_portal": "Portal de salud",

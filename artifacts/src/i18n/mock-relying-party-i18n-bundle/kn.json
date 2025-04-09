@@ -72,7 +72,10 @@
     "birth_date": "ಹುಟ್ಟಿದ ದಿನಾಂಕ",
     "address": "ವಿಳಾಸ",
     "show_raw_user_info": "ಕಚ್ಚಾ ಬಳಕೆದಾರರ ಮಾಹಿತಿಯನ್ನು ತೋರಿಸಿ",
-    "hide_raw_user_info": "ಕಚ್ಚಾ ಬಳಕೆದಾರರ ಮಾಹಿತಿಯನ್ನು ಮರೆಮಾಡಿ"
+    "hide_raw_user_info": "ಕಚ್ಚಾ ಬಳಕೆದಾರರ ಮಾಹಿತಿಯನ್ನು ಮರೆಮಾಡಿ",
+    "deceasedDeclarationDate": "ಮರಣ ಘೋಷಣೆಯ ದಿನಾಂಕ",
+    "declaredAsDeceased": "ಮೃತನೆಂದು ಘೋಷಿಸಲಾಗಿದೆ",
+    "typeOfDeath": "ಮರಣದ ಪ್ರಕಾರ"
   },
   "registration": {
     "child_registration": "ಬಳಕೆದಾರರ ನೋಂದಣಿ",

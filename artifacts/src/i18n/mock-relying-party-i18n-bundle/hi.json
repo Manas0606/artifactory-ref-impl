@@ -72,7 +72,10 @@
     "birth_date": "जन्म तिथि",
     "address": "पता",
     "show_raw_user_info": "कच्ची उपयोगकर्ता जानकारी दिखाएं",
-    "hide_raw_user_info": "अपरिष्कृत उपयोगकर्ता जानकारी छुपाएं"
+    "hide_raw_user_info": "अपरिष्कृत उपयोगकर्ता जानकारी छुपाएं",
+    "deceasedDeclarationDate": "मृत्यु घोषणा की तिथि",
+    "declaredAsDeceased": "मृत घोषित किया गया",
+    "typeOfDeath": "मृत्यु का प्रकार"
   },
   "registration": {
     "child_registration": "उपयोगकर्ता पंजीकरण",

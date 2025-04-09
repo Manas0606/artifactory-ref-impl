@@ -72,7 +72,10 @@
     "birth_date": "பிறந்த தேதி",
     "address": "முகவரி",
     "show_raw_user_info": "அசல் பயனர் தகவலைக் காட்டு",
-    "hide_raw_user_info": "அசல் பயனர் தகவலை மறை"
+    "hide_raw_user_info": "அசல் பயனர் தகவலை மறை",
+    "deceasedDeclarationDate": "இறப்பு அறிவிக்கப்பட்ட தேதி",
+    "declaredAsDeceased": "இறந்தவராக அறிவிக்கப்பட்டவர்",
+    "typeOfDeath": "இறப்பின் வகை"
   },
   "registration": {
     "child_registration": "உபயோகிப்போர் பதிவு",
