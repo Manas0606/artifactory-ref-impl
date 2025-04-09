@@ -72,7 +72,10 @@
     "birth_date": "ថ្ងៃខែ​ឆ្នាំ​កំណើត",
     "address": "អាស័យដ្ឋាន",
     "show_raw_user_info": "បង្ហាញព័ត៌មានអ្នកប្រើប្រាស់ឆៅ",
-    "hide_raw_user_info": "លាក់ព័ត៌មានអ្នកប្រើប្រាស់ឆៅ"
+    "hide_raw_user_info": "លាក់ព័ត៌មានអ្នកប្រើប្រាស់ឆៅ",
+    "deceasedDeclarationDate": "កាលបរិច្ឆេទប្រកាសការស្លាប់",
+    "declaredAsDeceased": "បានប្រកាសថាស្លាប់",
+    "typeOfDeath": "ប្រភេទនៃការស្លាប់"
   },
   "sidenav": {
     "health_portal": "វិបផតថលសុខភាព",
