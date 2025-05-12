@@ -381,7 +381,12 @@
 		"action_send": "ईमेल/एसएमएस भेजें",
 		"action_download": "पीडीएफ डाउनलोड करे",
 		"action_print": "प्रिंट",
-		"label_reg_cntr_dtl": "केंद्र का पता"
+		"label_reg_cntr_dtl": "केंद्र का पता",
+		"label_gender": "लिंग",
+    		"label_date_of_birth" : "जन्म तिथि",
+    		"gender_mle":"पुरुष",
+   		 "gender_fle":"महिला",
+   		 "gender_oth":"अन्य"
 	},
 	"preview": {
 		"title_preview": "पूर्वावलोकन",
@@ -511,6 +516,7 @@
 		}
 	},
 	"timeSelection": {
+		"action_add":"जोड़ना",
 		"title_book": "बुक अपॉइंटमेंट",
 		"text_prev": "पिछला",
 		"text_next": "अगला",
