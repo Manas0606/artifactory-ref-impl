@@ -2,12 +2,14 @@
   "languages_2Letters": {
     "en": "English",
     "km": "ខ្មែរ",
-    "es": "Español"
+    "es": "Español",
+    "fra": "Français"
   },
   "rtlLanguages": [],
   "langCodeMapping": {
     "eng": "en",
     "es": "es",
-    "khm": "km"
+    "khm": "km",
+    "fra": "fra"
   }
 }
