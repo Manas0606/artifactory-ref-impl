@@ -384,7 +384,12 @@
     "action_send": "ENVOYER EMAIL / SMS",
     "action_download": "TÉLÉCHARGER LE FICHIER PDF",
     "action_print": "IMPRESSION",
-    "label_reg_cntr_dtl": "Adresse du centre"
+    "label_reg_cntr_dtl": "Adresse du centre",
+    "label_gender": "Genre",
+    "label_date_of_birth" : "Date de naissance",
+    "gender_mle":"Mâle",
+    "gender_fle":"Femelle",
+    "gender_oth":"Autres"
   },
   "preview": {
     "title_preview": "Aperçu",
@@ -512,6 +517,7 @@
     }
   },
   "timeSelection": {
+     "action_add":"Ajouter",
     "title_book": "Rendez-vous du livre",
     "text_prev": "précédent",
     "text_next": "Suivant",
