@@ -3,13 +3,13 @@
     "en": "English",
     "km": "ខ្មែរ",
     "es": "Español",
-    "fra": "Français"
+    "fr": "Français"
   },
   "rtlLanguages": [],
   "langCodeMapping": {
     "eng": "en",
     "es": "es",
     "khm": "km",
-    "fra": "fra"
+    "fra": "fr"
   }
 }
