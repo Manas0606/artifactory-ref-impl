@@ -389,6 +389,7 @@
    		 "gender_oth":"अन्य"
 	},
 	"preview": {
+		"label_pre_id": "आवेदन पहचान पत्र",
 		"title_preview": "पूर्वावलोकन",
 		"language": "हिंदी",
 		"subheading_information": "निजी जानकारी",

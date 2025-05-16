@@ -392,6 +392,7 @@
     "gender_oth":"Autres"
   },
   "preview": {
+    "label_pre_id": "ID d'application",
     "title_preview": "Aperçu",
     "language": "français",
     "subheading_information": "Informations personnelles",
