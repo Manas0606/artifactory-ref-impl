@@ -119,7 +119,7 @@ COPY /src/auth/kernel-auth-adapter-new/kernel-auth-adapter-1.2.0.1.jar ${kernel_
 
 COPY /src/sdk/biosdk/install.sh ${biosdk_client_zip_path}/biosdk-client/
 
-RUN cd ${biosdk_lib_zip_path}/biosdk-lib/ && wget https://drive.google.com/file/d/1fksrlRLebyJYysX3xBWK6_kZHPLo4HWH/view?usp=drive_link && pwd && ls -ltr
+RUN cd ${biosdk_lib_zip_path}/biosdk-lib/ && wget https://technofortespl-my.sharepoint.com/:u:/g/personal/thamarai_kannan_technoforte_co_in/EQoTIKo72LlLt1WI792Q5tkBDaJ4Mi5YftJl5RpjiOBmEg?e=8MMc7F && pwd && ls -ltr
 
 #COPY /src/sdk/biosdk/mock-sdk-1.2.0.1-B3.jar ${biosdk_lib_zip_path}/biosdk-lib/mock-sdk-latest.jar
 
