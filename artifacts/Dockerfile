@@ -119,7 +119,7 @@ COPY /src/auth/kernel-auth-adapter-new/kernel-auth-adapter-1.2.0.1.jar ${kernel_
 
 COPY /src/sdk/biosdk/install.sh ${biosdk_client_zip_path}/biosdk-client/
 
-RUN cd ${biosdk_lib_zip_path}/biosdk-lib/ && wget https://technofortespl-my.sharepoint.com/:u:/g/personal/thamarai_kannan_technoforte_co_in/EQoTIKo72LlLt1WI792Q5tkBDaJ4Mi5YftJl5RpjiOBmEg?e=8MMc7F && pwd && ls -ltr
+RUN cd ${biosdk_lib_zip_path}/biosdk-lib/ && wget https://www.dropbox.com/scl/fi/ellb2v2cjrxkx476kjva8/mock-sdk-1.2.0.1-B3.jar?rlkey=mlps9izwsq5yplthyxn1waf1b&st=hew7bim0&dl=0 && mv mock-sdk-1.2.0.1-B3.jar?rlkey=mlps9izwsq5yplthyxn1waf1b&st=hew7bim0&dl=0 mock-sdk-1.2.0.1-B3.jar && pwd && ls -ltr
 
 #COPY /src/sdk/biosdk/mock-sdk-1.2.0.1-B3.jar ${biosdk_lib_zip_path}/biosdk-lib/mock-sdk-latest.jar
 
