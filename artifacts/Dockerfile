@@ -119,7 +119,9 @@ COPY /src/auth/kernel-auth-adapter-new/kernel-auth-adapter-1.2.0.1.jar ${kernel_
 
 COPY /src/sdk/biosdk/install.sh ${biosdk_client_zip_path}/biosdk-client/
 
-COPY /src/sdk/biosdk/mock-sdk-1.2.0.1-B3.jar ${biosdk_lib_zip_path}/biosdk-lib/mock-sdk-latest.jar
+RUN cd ${biosdk_lib_zip_path}/biosdk-lib/ && wget https://drive.google.com/file/d/1fksrlRLebyJYysX3xBWK6_kZHPLo4HWH/view?usp=drive_link && pwd && ls -ltr
+
+#COPY /src/sdk/biosdk/mock-sdk-1.2.0.1-B3.jar ${biosdk_lib_zip_path}/biosdk-lib/mock-sdk-latest.jar
 
 COPY /src/sdk/demosdk/install.sh ${demosdk_zip_path}/demosdk/
 
