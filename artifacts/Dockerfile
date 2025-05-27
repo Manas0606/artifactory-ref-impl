@@ -119,8 +119,8 @@ COPY /src/auth/kernel-auth-adapter-new/kernel-auth-adapter-1.2.0.1.jar ${kernel_
 
 COPY /src/sdk/biosdk/install.sh ${biosdk_client_zip_path}/biosdk-client/
 
-RUN cd ${biosdk_lib_zip_path}/biosdk-lib/ && wget 'https://www.dropbox.com/scl/fi/49de993h2ode0s701vox7/mock-sdk-1.2.0.1-B3-1.jar?rlkey=j881q8d4dxahcs264cdaor6rq&st=gva83u4y&dl=0'
-RUN cd ${biosdk_lib_zip_path}/biosdk-lib/ && mv 'mock-sdk-1.2.0.1-B3-1.jar?rlkey=j881q8d4dxahcs264cdaor6rq&st=gva83u4y&dl=0' mock-sdk-1.2.0.1-B3.jar && pwd && ls -ltr
+RUN cd ${biosdk_lib_zip_path}/biosdk-lib/ && wget 'https://www.dropbox.com/scl/fi/x9yu271pp79xz5cyvujh7/mock-sdk-1.2.0.1-B3-2.jar?rlkey=0ybmapocj4kvooleiejndfpko&st=to2zud0f&dl=0'
+RUN cd ${biosdk_lib_zip_path}/biosdk-lib/ && mv 'mock-sdk-1.2.0.1-B3-2.jar?rlkey=0ybmapocj4kvooleiejndfpko&st=to2zud0f&dl=0' mock-sdk-1.2.0.1-B3.jar && pwd && ls -ltr
 
 #COPY /src/sdk/biosdk/mock-sdk-1.2.0.1-B3.jar ${biosdk_lib_zip_path}/biosdk-lib/mock-sdk-latest.jar
 
