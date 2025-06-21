@@ -122,8 +122,8 @@ RUN cd ${biosdk_client_zip_path}/biosdk-client/ && wget 'https://www.dropbox.com
 RUN cd ${biosdk_client_zip_path}/biosdk-client/ && mv 'biosdk-client-1.2.0.1-3.jar?rlkey=9nl95d5aalkuk3a6br5a9fqh2&st=1meahu6i&dl=0' biosdk-client-1.2.0.1-new.jar && pwd && ls -ltr
 
 
-RUN cd ${biosdk_lib_zip_path}/biosdk-lib/ && wget 'https://www.dropbox.com/scl/fi/b15kwfvuetd9ok3qqfm7t/mock-sdk-1.2.0.2-1.jar?rlkey=we856tewujyt46yv9rwhsswy2&st=y88cbr0m&dl=0'
-RUN cd ${biosdk_lib_zip_path}/biosdk-lib/ && mv 'mock-sdk-1.2.0.2-1.jar?rlkey=we856tewujyt46yv9rwhsswy2&st=y88cbr0m&dl=0' mock-sdk-1.2.0.1-B3.jar && pwd && ls -ltr
+RUN cd ${biosdk_lib_zip_path}/biosdk-lib/ && wget 'https://www.dropbox.com/scl/fi/glqnmy29pzvxgl0boan5j/mock-sdk-1.2.0.2-2.jar?rlkey=5iwd5rxou4eahdt61is5l33j1&st=jvzkpj7u&dl=0'
+RUN cd ${biosdk_lib_zip_path}/biosdk-lib/ && mv 'mock-sdk-1.2.0.2-2.jar?rlkey=5iwd5rxou4eahdt61is5l33j1&st=jvzkpj7u&dl=0' mock-sdk-1.2.0.1-B3.jar && pwd && ls -ltr
 
 #COPY /src/sdk/biosdk/mock-sdk-1.2.0.1-B3.jar ${biosdk_lib_zip_path}/biosdk-lib/mock-sdk-latest.jar
 
