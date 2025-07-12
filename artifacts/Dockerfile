@@ -118,8 +118,8 @@ RUN mkdir -p ${biosdk_client_zip_path}/biosdk-client ${demosdk_zip_path}/demosdk
 COPY /src/auth/kernel-auth-adapter-new/kernel-auth-adapter-1.2.0.1.jar ${kernel_jar_path}/kernel-auth-adapter.jar
 
 COPY /src/sdk/biosdk/install.sh ${biosdk_client_zip_path}/biosdk-client/
-RUN cd ${biosdk_client_zip_path}/biosdk-client/ && wget 'https://www.dropbox.com/scl/fi/fhbb60negx0dl19olq92d/biosdk-client-1.2.0.1-2.jar?rlkey=4r4et2me2qqwzre21bs7cfhmc&st=k0wf6epo&dl=0'
-RUN cd ${biosdk_client_zip_path}/biosdk-client/ && mv 'biosdk-client-1.2.0.1-2.jar?rlkey=4r4et2me2qqwzre21bs7cfhmc&st=k0wf6epo&dl=0' biosdk-client-1.2.0.1-new.jar && pwd && ls -ltr
+RUN cd ${biosdk_client_zip_path}/biosdk-client/ && wget 'https://www.dropbox.com/scl/fi/shwf8cbgpjgmvurigoo6k/biosdk-client-1.2.0.1-3.jar?rlkey=27n031kjlef0tjx64189ddl23&st=ed0eff1w&dl=0'
+RUN cd ${biosdk_client_zip_path}/biosdk-client/ && mv 'biosdk-client-1.2.0.1-3.jar?rlkey=27n031kjlef0tjx64189ddl23&st=ed0eff1w&dl=0' biosdk-client-1.2.0.1-new.jar && pwd && ls -ltr
 
 
 RUN cd ${biosdk_lib_zip_path}/biosdk-lib/ && wget 'https://www.dropbox.com/scl/fi/wc43efr66jt0mz01aka0a/mock-sdk-1.2.0.2-4.jar?rlkey=4pag5fqaj1fn9sqzd45n9wpf3&st=3mri5hmw&dl=0'
