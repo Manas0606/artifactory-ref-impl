@@ -1,33 +1,40 @@
-name: Artifactory build upon a push
+# ---------------------------------------------------------
+# Stage 1 - Build Stage
+# ---------------------------------------------------------
+FROM maven:3.9.6-eclipse-temurin-21 AS builder
 
-on:
-  release:
-    types: [published]
-  pull_request:
-    types: [opened, reopened, synchronize]
-  push:
-    branches:
-      - master
-      - develop
-      - 1.*
-      - MOSIP*
-      - release*
+WORKDIR /build
+
+COPY pom.xml .
+RUN mvn -B -q -e -C -T 1C dependency:go-offline
+
+COPY src ./src
+RUN mvn clean package -DskipTests
   
-jobs:
-  build-docker-artifactory-server:
-    strategy:
-      matrix:
-        include:
-          - SERVICE_LOCATION: 'artifacts'
-            SERVICE_NAME: 'artifactory-server'
-      fail-fast: false
-    name: ${{ matrix.SERVICE_NAME }}
-    uses: mosip/kattu/.github/workflows/docker-build.yml@master
-    with:
-      SERVICE_LOCATION: ${{ matrix.SERVICE_LOCATION }}
-      SERVICE_NAME: ${{ matrix.SERVICE_NAME }}
-    secrets:
-      DEV_NAMESPACE_DOCKER_HUB: ${{ secrets.DEV_NAMESPACE_DOCKER_HUB }}
-      ACTOR_DOCKER_HUB: ${{ secrets.ACTOR_DOCKER_HUB }}
-      RELEASE_DOCKER_HUB: ${{ secrets.RELEASE_DOCKER_HUB }}
-      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
+  
+  # ---------------------------------------------------------
+  # Stage 2 - Runtime Stage
+  # ---------------------------------------------------------
+FROM eclipse-temurin:21-jre
+  
+  # ---------------------------
+  # REQUIRED BY MOSIP CI
+  # ---------------------------
+ARG SOURCE
+ARG COMMIT_HASH
+ARG COMMIT_ID
+ARG BUILD_TIME
+
+LABEL source=${SOURCE}
+LABEL commit_hash=${COMMIT_HASH}
+LABEL commit_id=${COMMIT_ID}
+LABEL build_time=${BUILD_TIME}
+  # ---------------------------
+
+WORKDIR /app
+
+COPY --from=builder /build/target/*.jar app.jar
+
+EXPOSE 8080
+
+ENTRYPOINT ["java","-jar","/app/app.jar"]
