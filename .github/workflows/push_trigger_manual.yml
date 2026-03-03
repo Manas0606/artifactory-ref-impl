@@ -1,6 +1,6 @@
 name: Maven Package Build Manual
 
-on: workflow_dispatch
+on:  workflow_dispatch:
 
 jobs:
 
